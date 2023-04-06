@@ -4,7 +4,7 @@ import numpy as np
 from scipy.stats import norm
 from scipy.stats import chi2
 
-chat_id = 453878141
+chat_id = 1251251937
 
 def solution(p: float, x: np.array) -> tuple:
     alpha = 1 - p
