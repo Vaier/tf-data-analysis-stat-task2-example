@@ -11,6 +11,6 @@ def solution(p: float, x: np.array) -> tuple:
     n = len(x)
     x = x**2
     sum = x.sum()
-    left = np.sqrt(sum / (12 * chi2.ppf(1 - alpha / 2, n * 2)))
-    right = np.sqrt(sum / (12 * chi2.ppf(alpha / 2, n * 2)))
+    left = np.sqrt(sum / (24 * chi2.ppf(1 - alpha / 2, n * 2)))
+    right = np.sqrt(sum / (24 * chi2.ppf(alpha / 2, n * 2)))
     return left, right
